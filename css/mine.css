@@ -1,0 +1,190 @@
+/* 全局字体 */
+:root {
+    --global-font-size: 15px;
+}
+
+/* 文章字体大小 */
+div#post{
+    font-size: 18px
+}
+
+#article-container code {
+    font-size: 18px;
+}
+
+
+/* 背景色 */
+[data-theme="light"]
+body{
+    --global-bg: #f4f5f5
+}
+
+[data-theme='dark'] {
+    --global-bg: #282828;
+    --card-bg: #333;
+    /* --global-bg: #181c27;
+    --card-bg: #252d38; */
+}
+
+
+/* 底部字体颜色 */
+#footer #footer-wrap {
+    padding: 20px 20px;
+    color:#999
+}
+
+#footer #footer-wrap a {
+    color: rgb(100, 92, 92)
+}
+
+#footer{
+    background: rgba(0, 0, 0, 0); /* foot 颜色 */
+}
+
+[data-theme='dark']
+#footer:before{
+    background-color: rgba(0,0,0,0);
+}
+
+#page-header.post-bg:before{
+    background-color: rgba(0,0,0,0.3);
+}
+
+[data-theme='dark']
+#page-header.post-bg:before{
+    background-color: rgba(0,0,0,0.3);
+}
+
+[data-theme='dark']
+#page-header:before{
+  background-color: rgba(0,0,0,0.3);
+}
+
+[data-theme='dark']
+#web_bg:before{
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* [data-theme="dark"]
+#footer{
+    background: rgba(0, 0, 0, 0);
+} */
+
+/* dark mode*/
+/* [data-theme="dark"] */
+/* #footer {
+	background: rgba(0, 0, 0, 0); */
+	/* border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	-webkit-backdrop-filter: saturate(100%) blur(5px);
+	backdrop-filter: saturate(100%) blur(5px) */
+/* } */
+
+
+/* 渐进动画 */
+#web_bg{
+    animation: to_show 0.5s;
+}
+
+/* related post图片亮度*/
+.postImgHover img, 
+#pagination .prev-post img, 
+#pagination .next-post img, 
+.relatedPosts > .relatedPosts-list > div img{
+    opacity: 0.6;
+}
+
+/* 字体颜色 */
+#article-container code{
+    color: #ff0000;
+}
+
+[data-theme='dark']
+#article-container code{
+    color: #f8a69d;
+}
+
+#post .post-copyright .post-copyright-meta{
+    color: #006db3;
+}
+
+#post .post-copyright .post-copyright-info a {
+    color: #1f8fd7;
+}
+
+#post .tag_share .post-meta__tags{
+    color: #1f8fd7;
+}
+
+#article-container a {
+    color: #3d9bd8;
+}
+
+
+[data-theme='dark'] img {
+    filter: brightness(1.0);
+}
+
+[data-theme='dark']{
+    --font-color: rgba(255,255,255,0.9);
+    --scrollbar-color: #958f8f;
+}
+
+/* 美化标题图标 https://fontawesome.com/ */
+#content-inner.layout h1::before {
+    color: #db2121 ;
+}
+#content-inner.layout h2::before {
+    color: #fb6161 ;
+}
+#content-inner.layout h3::before {
+    color: #29c3e9 ;
+}
+#content-inner.layout h4::before {
+    color: #6800e0 ;
+}
+#content-inner.layout h5::before {
+    color: #e448ca ;
+}
+#content-inner.layout h6::before {
+    color: #e05e7a ;
+}
+
+
+/* 页面宽度布局 */
+#content-inner, .layout{
+    /* max-width:75%; */
+    max-width: 1400px;
+}
+
+#aside-content {
+    /* width: 25%; */
+    width: 350px;
+}
+
+@media screen and (max-width: 900px){
+    #aside-content {
+        width: 100%;
+    }
+}
+
+.layout > div:first-child {
+    /* width: 75%; */
+    width: 1000px;
+}
+
+.layout{
+    padding: 40px 25px;
+}
+
+/* 自定义字体 */
+/* @font-face {
+    font-family: 'Times New Roman', '楷体';
+    src: url('https://gitee.com/qiwuteng/blog-data0/raw/master/font/times.ttf'), url('https://gitee.com/qiwuteng/blog-data0/raw/master/font/simkai.ttf');
+}
+
+body {
+
+    font-family: 'Times New Roman', '楷体'; 
+    font-size: 14px;
+} */
