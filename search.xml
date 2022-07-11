@@ -4,35 +4,6 @@
   
     
     <entry>
-      <title>论文解读: 2020 2D-TAN</title>
-      <link href="/2022/05/23/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB-2020-2D-TAN/"/>
-      <url>/2022/05/23/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB-2020-2D-TAN/</url>
-      
-        <content type="html"><![CDATA[<p>论文地址：https://arxiv.org/abs/1912.03590</p><p>github 地址：https://github.com/microsoft/2D-TAN</p><h2 id="abstract">Abstract</h2><p>TSGV任务中，一个目标片段可能和视频中的其他片段存在着一定的联系，但是现有的方法不能解决这个问题，因为它们对于目标片段都是进行单独的处理，忽略了不同时间段之间的依赖性。在2D-TAN 这个工作中，作者建立了 2d map来对不同时间片段的关系进行建模。如下图中的 2Dmap，它的纵坐标是时间段的起始时间，横坐标是结束时间。通过 2D map就能用覆盖所有不同长度的视频片段。2D-TAN 通过 2D map能对相邻的时间段关系进行编码，同时学习判别特征来匹配视频片段与文本表达。</p><p><imgsrc="../../../blog-data1/论文解读-2020-2D-TAN/image-20220523154356902.png"alt="Figure 1" /></p><h2 id="introduce">Introduce</h2><p>当时在 TSGV 领域中，主要的方法是 two-stage 的，two-stage的方法是先通过滑动窗口得到候选片段，每个候选片段都会和句子查询进行匹配来判断该候选是否是目标片段。但two-stage方法都是对候选片段进行单独的思考，忽略了这些片段之间的依赖性。以上面的Figure 1 中的 Query C为例，如果模型只看到视频的后面部分，那么是不能进行准确定位的，因为模型没有看过前面部分的视频，而前面部分有男人吹萨克斯的画面，所以对于Query C 中的 ‘again’ ，模型不能进行精准的定位。或者对于 QueryB，有很多片段与该目标片段重叠，它们在视觉内容上相关，但在语义内容上不同。对于先前的方法，是很难区别视觉内容上相似的视频片段，因为它们单独处理每一个视频候选。</p><p>为了解决这个问题，作者提出了 2D-TAN，核心思想是在 2D map上进行目标片段的定位。在 Figure 1 中，<spanclass="math inline">\((i,j)\)</span> 坐标的格子，代表的就是 <spanclass="math inline">\(i\tau\)</span> 到 <spanclass="math inline">\((j+1)\tau\)</span> 的视频片段。该 2D map就覆盖了所有不同长度的视频片段。2D -TAN 能通过 2D map在进行预测时理解给更多的上下文信息。另一方面就是邻近的时间片段可能有相同的内容重叠，但可能包含不同的的语义信息。</p><h2 id="approach">Approach</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> AI </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> deep learning </tag>
-            
-            <tag> TSGV </tag>
-            
-            <tag> paper reading </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Windows Terminal 配置 SSH</title>
       <link href="/2022/05/02/Windows-Terminal-%E9%85%8D%E7%BD%AE-SSH/"/>
       <url>/2022/05/02/Windows-Terminal-%E9%85%8D%E7%BD%AE-SSH/</url>
