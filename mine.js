@@ -1,10 +1,10 @@
 // 添加八毛卡通人物
 /*右下角添加卡通人物*/
-// var cartoon_gif = '<i class="fas fa-arrow-up" style ="padding:10px" ></i><img style="max-width: 234%;transform: translate(-75px,-75px);" src="/img/lengmo.gif" title="回到顶部" data-ll-status="loaded" class="loaded">';
+var cartoon_gif =
+  '<i class="fas fa-arrow-up" style ="padding:10px" ></i><img style="max-width: 234%;transform: translate(-75px,-75px);" src="https://blog-1312485533.cos.ap-nanjing.myqcloud.com/site/xinkule.gif" title="回到顶部" data-ll-status="loaded" class="loaded">';
 // var cartoon_gif = '<i class="fas fa-arrow-up" style ="padding:10px" ></i><img style="max-width: 234%;transform: translate(-75px,-75px);" src="https://blog-1312485533.cos.ap-nanjing.myqcloud.com/images0/xinkule.gif" title="回到顶部" data-ll-status="loaded" class="loaded">';
 /*添加到返回顶部按钮下*/
-// document.getElementById("go-up").innerHTML = cartoon_gif
-
+document.getElementById("go-up").innerHTML = cartoon_gif;
 
 // 雪花
 // var stop, staticx;

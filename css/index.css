@@ -2523,21 +2523,41 @@ figure.highlight pre .javascript .function {
 }
 .tag-cloud-list a {
   display: inline-block;
-  margin: 2px;
-  padding: 2px 7px;
-  line-height: 1.7;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-  border-radius: 5px;
+  margin: 0.2rem 0.6rem 0.2rem 0;
+  padding: 0 0.4rem;
+  width: fit-content;
+  border: 1px solid #f76b61;
+  border-radius: 0.8rem;
+  background: #f76b61;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .tag-cloud-list a:hover {
-  background: var(--btn-bg) !important;
-  -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  color: var(--btn-color) !important;
+  background: #42d3d8;
+  color: #fff !important;
+  border: 1px solid #42d3d8;
+  -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.04);
+  -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.04);
+  box-shadow: 0 4px 8px 6px rgba(7,17,27,0.04);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
   .tag-cloud-list a {
