@@ -1,0 +1,208 @@
+/* 全局字体 */
+:root {
+    --global-font-size: 15px;
+    /* 滚动条 */
+    --scrollbar-color: #2e3b2f;
+    /* 卡片阴影 */
+    --card-box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0);
+    --card-hover-box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.1);
+    /* 代码块 */
+    --hl-bg: #282c34;
+    --hltools-bg: #282c34;
+    --hlnumber-bg: #282c34;
+    /* --btn-bg: #665a59; */
+}
+
+b,
+strong {
+    font-weight: bolder;
+    color: rgb(255, 130, 178);
+}
+
+[data-theme="light"] {
+    /* --global-bg: #f4f5f5; */
+    --global-bg: rgba(255, 255, 255);
+    --card-bg: rgba(255, 255, 255, 0);
+    --btn-bg: #665a59;
+}
+
+[data-theme='dark'] {
+    --global-bg: #202124;
+    /* --card-bg: rgba(34, 39, 46, 0.3); */
+    --card-bg: rgba(34, 39, 46, 0);
+}
+
+
+/* #aside-content {
+    margin-left: 15px;
+    border-left: 1px solid rgb(133 133 133 / 25%);
+} */
+
+
+
+/* 页面数字背景颜色 */
+#pagination .page-number.current {
+    background: #757072;
+    color: var(--white);
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+    background: #857b7a;
+    color: #fff;
+}
+
+/* 文章字体大小 */
+div#post {
+    font-size: 17px
+}
+
+#article-container code {
+    font-size: 17px;
+}
+
+#page-header {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+#page-header.nav-fixed #nav a,
+#page-header.nav-fixed #nav #toggle-menu {
+    color: rgba(255, 255, 255, 0.9)
+}
+
+#post,
+#card-toc {
+    --card-box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0);
+    --card-hover-box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0);
+}
+
+
+
+
+/* 底部字体颜色 */
+#footer #footer-wrap {
+    padding: 20px 20px;
+    color: #999
+}
+
+#footer #footer-wrap a {
+    color: rgb(100, 92, 92)
+}
+
+#footer {
+    border-top: 1px solid rgb(133 133 133 / 25%);
+    background: rgba(0, 0, 0, 0);
+    /* foot 颜色 */
+}
+
+[data-theme='dark'] #footer:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#page-header.post-bg:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] #page-header.post-bg:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] #page-header:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] #web_bg:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#page-header.nav-fixed #nav {
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+[data-theme="dark"] #page-header.nav-fixed>#nav,
+[data-theme="dark"] #page-header.not-top-img>#nav {
+    background: rgba(32, 33, 36, 0);
+    position: absolute;
+}
+
+
+/* 渐进动画 */
+#web_bg {
+    animation: to_show 0.5s;
+}
+
+/* related post图片亮度*/
+.postImgHover img,
+#pagination .prev-post img,
+#pagination .next-post img,
+.relatedPosts>.relatedPosts-list>div img {
+    opacity: 0.6;
+}
+
+[data-theme='dark'] {
+    --preloader-bg: #37474f;
+}
+
+
+/* 字体颜色 */
+#article-container code {
+    color: #3bada6;
+}
+
+[data-theme='dark'] #article-container code {
+    color: #2a8c85;
+}
+
+
+[data-theme='dark'] img {
+    filter: brightness(1.0);
+}
+
+
+/* 页面宽度布局 */
+#content-inner,
+.layout {
+    /* max-width:75%; */
+    max-width: 1400px;
+}
+
+/* 搜索栏大小 */
+.search-dialog {
+    margin-left: -400px;
+    width: 800px;
+}
+
+/* 美化标题图标 https://fontawesome.com/ */
+#content-inner.layout h1::before {
+    color: #f25757;
+}
+
+#content-inner.layout h2::before {
+    color: #4b91b7;
+}
+
+#content-inner.layout h3::before {
+    color: #29c3e9;
+}
+
+#content-inner.layout h4::before {
+    color: #9c78c5;
+}
+
+#content-inner.layout h5::before {
+    color: #924c86;
+}
+
+#content-inner.layout h6::before {
+    color: #e05e7a;
+}
+
+/* #article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4,
+#article-container h5,
+#article-container h6 {
+    padding-left: 0px;
+} */
